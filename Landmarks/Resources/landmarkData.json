@@ -1,0 +1,114 @@
+[
+  {
+    "name": "故宫",
+    "category": "Humanity",
+    "city": "北京",
+    "prov": "北京",
+    "isFeatured": true,
+    "isFavorite": true,
+    "id": 1001,
+    "coordinates": {
+      "longitude": 116.413384,
+      "latitude": 39.910925
+    },
+    "imageName": "gugong"
+  },
+  {
+    "name": "万里长城",
+    "category": "Humanity",
+    "city": "延庆",
+    "prov": "北京",
+    "isFeatured": true,
+    "isFavorite": false,
+    "id": 1002,
+    "coordinates": {
+      "longitude": 115.962755,
+      "latitude": 40.477411
+    },
+    "imageName": "the-great-wall"
+  },
+  {
+    "name": "桂林山水",
+    "category": "Nature",
+    "city": "桂林",
+    "prov": "广西",
+    "isFeatured": false,
+    "isFavorite": false,
+    "id": 1003,
+    "coordinates": {
+      "longitude": 110.286435,
+      "latitude": 25.275509
+    },
+    "imageName": "guilin"
+  },
+  {
+    "name": "西湖",
+    "category": "Nature",
+    "city": "杭州",
+    "prov": "浙江",
+    "isFeatured": false,
+    "isFavorite": false,
+    "id": 1004,
+    "coordinates": {
+      "longitude": 120.146283,
+      "latitude": 30.259922
+    },
+    "imageName": "west-lake"
+  },
+  {
+    "name": "苏州园林",
+    "category": "Humanity",
+    "city": "苏州",
+    "prov": "江苏",
+    "isFeatured": true,
+    "isFavorite": true,
+    "id": 1005,
+    "coordinates": {
+      "longitude": 120.592412,
+      "latitude": 31.303564
+    },
+    "imageName": "suzhou-garden"
+  },
+  {
+    "name": "黄山",
+    "category": "Nature",
+    "city": "黄山",
+    "prov": "安徽",
+    "isFeatured": false,
+    "isFavorite": false,
+    "id": 1006,
+    "coordinates": {
+      "longitude": 118.14761,
+      "latitude": 30.278651
+    },
+    "imageName": "mount-huang"
+  },
+  {
+    "name": "长江三峡",
+    "category": "Nature",
+    "city": "奉节",
+    "prov": "重庆",
+    "isFeatured": false,
+    "isFavorite": true,
+    "id": 1007,
+    "coordinates": {
+      "longitude": 109.545957,
+      "latitude": 31.040396
+    },
+    "imageName": "three-gorges"
+  },
+  {
+    "name": "兵马俑",
+    "category": "Humanity",
+    "city": "西安",
+    "prov": "陕西",
+    "isFeatured": true,
+    "isFavorite": false,
+    "id": 1008,
+    "coordinates": {
+      "longitude": 109.220436,
+      "latitude": 34.372747
+    },
+    "imageName": "terracotta-warriors"
+  }
+]
