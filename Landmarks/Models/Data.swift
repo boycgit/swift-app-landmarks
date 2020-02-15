@@ -5,13 +5,14 @@
 //  Created by boychenney on 2020/1/29.
 //  Copyright © 2020 boychenney. All rights reserved.
 //
-
+import Foundation
 import UIKit
 import SwiftUI
 import CoreLocation
 
 
 let landmarkData: [Landmark] = load("landmarkData.json")
+let hikeData: [Hike] = load("hikeData.json")
 
 func load<T: Decodable>(_ filename: String, as type: T.Type = T.self) -> T {
     let data: Data

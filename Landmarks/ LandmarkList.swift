@@ -11,8 +11,6 @@ import SwiftUI
 struct LandmarkList: View {
     @EnvironmentObject var userData: UserData
     var body: some View {
-        
-        NavigationView {
             List {
                 Toggle(isOn: $userData.showFavoritesOnly) {
                     Text("只看收藏")
@@ -27,17 +25,19 @@ struct LandmarkList: View {
                 }
             }
             .navigationBarTitle(Text("风景名胜"))
-        }
     }
 }
 
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(["iPhone SE", "iPhone XS"], id: \.self) { deviceName in
-            LandmarkList()
+            NavigationView {
+                LandmarkList()
                 .environmentObject(UserData())
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)
+            }
+            
         }
     }
 }
