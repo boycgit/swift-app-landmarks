@@ -40,7 +40,7 @@ struct CategoryHome: View {
     var body: some View {
         NavigationView{
             List{
-                FeaturedLandmarks(landmarks: featured)
+                PageView(features.map { FeatureCard(landmark: $0) })
                 .scaledToFill()
                 .frame(height: 200)
                 .clipped()

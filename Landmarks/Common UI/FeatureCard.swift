@@ -12,10 +12,14 @@ struct FeatureCard: View {
     var landmark: Landmark
     
     var body: some View {
-        landmark.featureImage?
-        .resizable()
-        .aspectRatio(contentMode: .fit)
-        .overlay(TextOverlay(landmark: landmark))
+    NavigationLink(destination:LandmarkDetail(landmark: landmark)) {
+            landmark.featureImage?
+            .renderingMode(.original)
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .overlay(TextOverlay(landmark: landmark))
+        }
+        
     }
 }
 
@@ -39,11 +43,13 @@ struct TextOverlay: View {
                     .bold()
                 Text(landmark.city)
             }
-            .padding()
+            .padding(.bottom, 30.0)
+            .padding(.leading, 20)
         }
         .foregroundColor(.white)
     }
 }
+
 
 struct FeatureCard_Previews: PreviewProvider {
     static var previews: some View {
